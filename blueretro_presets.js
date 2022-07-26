@@ -370,7 +370,7 @@ function onlyUnique(value, index, self) {
 }
 
 function initBlueRetroCfg() {
-    getMapList('https://api.github.com/repos/darthcloud/BlueRetroWebCfg/contents/map/')
+    getMapList('https://github.com/davidxgames/BlueRetro_XGAMES_VIDEOJUEGOS/blob/master/map/n64_fps.json')
     .then(files => {
         return fetchMap(presets, files, 0);
     })
