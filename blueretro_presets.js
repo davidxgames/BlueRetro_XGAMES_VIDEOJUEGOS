@@ -370,7 +370,7 @@ function onlyUnique(value, index, self) {
 }
 
 function initBlueRetroCfg() {
-    getMapList('map/')
+    getMapList('https://api.github.com/repos/darthcloud/BlueRetroWebCfg/contents/map/')
     .then(files => {
         return fetchMap(presets, files, 0);
     })
